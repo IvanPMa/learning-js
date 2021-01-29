@@ -18,7 +18,13 @@ var lenguajes = new Array("php","js","java","c++","ruby","c#");
 // }
 document.write("Listado de lenguajes");
 document.write("<ul>");
+/*
 for(var i =0; i<lenguajes.length; i++){
     document.write("<li>"+lenguajes[i]+"</li>");
-}
+}*/
+//forEach(elemento, index, array)
+lenguajes.forEach((elemento, indice /*array*/)=>{
+    // console.log(array);
+    document.write("<li>"+indice+" - "+elemento+"</li>");
+});
 document.write("</ul>");
