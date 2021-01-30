@@ -32,3 +32,19 @@ for (let lenguaje in lenguajes){
     document.write("<li>"+lenguajes[lenguaje] +"</li>");
 }
 document.write("</ul>");
+
+//Busquedas
+//  var busqueda =lenguajes.find(function(lenguaje){
+//     return lenguaje == "php";
+// });
+//Reduciendo el bloque de arriba
+var precios = [10,20, 50,80,12]
+ 
+var busqueda = lenguajes.find(lenguaje => lenguaje=="php");
+var busqueda2 = lenguajes.findIndex(lenguaje => lenguaje=="php");
+// El metodo some nos permite comprobar los numeros de elementos que cumplan las condiciones
+var busqueda3 = precios.some(precio => precio >=20);
+
+console.log(busqueda);
+console.log(busqueda2);
+console.log(busqueda3);
