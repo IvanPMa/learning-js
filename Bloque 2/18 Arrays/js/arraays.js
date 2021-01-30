@@ -23,8 +23,12 @@ for(var i =0; i<lenguajes.length; i++){
     document.write("<li>"+lenguajes[i]+"</li>");
 }*/
 //forEach(elemento, index, array)
-lenguajes.forEach((elemento, indice /*array*/)=>{
-    // console.log(array);
-    document.write("<li>"+indice+" - "+elemento+"</li>");
-});
+// lenguajes.forEach((elemento, indice /*array*/)=>{
+//     // console.log(array);
+//     document.write("<li>"+indice+" - "+elemento+"</li>");
+// });
+
+for (let lenguaje in lenguajes){
+    document.write("<li>"+lenguajes[lenguaje] +"</li>");
+}
 document.write("</ul>");
